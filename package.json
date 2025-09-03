@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "eslint:fix": "eslint . --fix",
     "format": "prettier . --write",
-    "prepare": "husky"
+    "h": "husky"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -35,12 +35,12 @@
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
   },
-  "lint-staged" :{
-    ".*{js,jsx,ts,tsx":[
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
       "npm run lint:fix",
       "npm run format"
     ],
-    ".*{css,md,json}":[
+    "*.{css,md,json}": [
       "npm run format"
     ]
   }
