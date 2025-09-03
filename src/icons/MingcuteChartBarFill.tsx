@@ -1,4 +1,4 @@
-import { ReactElement, SVGProps } from 'react';
+import type { ReactElement, SVGProps } from 'react';
 
 export function MingcuteChartBarFill(
   props: SVGProps<SVGSVGElement>
@@ -6,8 +6,8 @@ export function MingcuteChartBarFill(
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1em"
-      height="1em"
+      width="1.5em"
+      height="1.5em"
       viewBox="0 0 24 24"
       {...props}
     >

@@ -1,3 +1,156 @@
-.header {
-  background-color: red;
+#header {
+  padding-block: 2rem;
 }
+
+.container {
+  margin-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 112px;
+  height: 29px;
+  display: block;
+}
+
+.hamburger {
+  display: block;
+  height: fit-content;
+}
+
+.container nav {
+  display: none;
+}
+
+.actions {
+  gap: 10px;
+  display: none;
+}
+
+/* sm */
+@media screen and (min-width: 640px) {
+  .container {
+    width: min(75rem, 100% - 2rem);
+    margin-inline: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .container nav {
+    display: block;
+  }
+
+  .container nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .container nav ul li a {
+    text-decoration: none;
+    font-size: 10px;
+    color: inherit;
+  }
+
+  .container nav ul li:first-child a {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .actions {
+    display: flex;
+  }
+
+  .btn_logIN,
+  .btn_lOgOut {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    padding: 14px 15px;
+    border: none;
+    font-size: 0.62rem;
+    transition: background-color 0.3 ease-in-out;
+  }
+
+  .btn_logIN:hover {
+    background-color: var(--color-primary-hover);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .btn_lOgOut {
+    border: 1px var(--color-primary) solid;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .btn_lOgOut:hover {
+    background-color: rgb(236, 236, 236);
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+/* md */
+
+@media screen and (min-width: 768px) {
+  .container nav ul {
+    gap: 2;
+  }
+
+  .container nav ul li a {
+    font-size: 12px;
+  }
+
+  .btn_logIN,
+  .btn_lOgOut {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    padding: 14px 15px;
+    border: none;
+    font-size: 10px;
+  }
+
+  .btn_lOgOut {
+    border: 1px var(--color-primary) solid;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+}
+
+/* lg */
+
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: revert;
+    height: revert;
+  }
+
+  .container nav ul {
+    gap: 3;
+  }
+
+  .container nav ul li a {
+    font-size: 1rem;
+  }
+
+  .btn_logIN,
+  .btn_lOgOut {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    padding: 14px 34px;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .btn_lOgOut {
+    border: 1px var(--color-primary) solid;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+}
+
+/* xl: 1280px به بالا */

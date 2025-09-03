@@ -1,3 +1,9 @@
+:root {
+  --color-primary: #035e89;
+  --color-white: #ffffff;
+  --color-primary-hover: #014869;
+}
+
 *,
 *::before,
 *::after {
@@ -6,8 +12,11 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   font-family: 'Inter', system-ui;
+  overflow-x: hidden;
+  min-height: 100dvh;
 }
 
 input,
