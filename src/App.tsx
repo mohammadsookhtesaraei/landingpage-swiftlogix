@@ -1,3 +1,11 @@
+import Header from '@/components/header/Header';
+
 export default function App() {
-  return <div>Apdfdfp</div>;
+  return (
+    <>
+      <Header />
+      <main></main>
+      <footer></footer>
+    </>
+  );
 }
