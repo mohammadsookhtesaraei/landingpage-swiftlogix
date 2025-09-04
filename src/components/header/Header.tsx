@@ -36,8 +36,8 @@ export default function Header(): ReactElement {
         </ul>
       </nav>
       <div className={styles.actions}>
-        <Button className={styles.btn_logIN} title="Log In" />
-        <Button className={styles.btn_lOgOut} title="Sing Out" />
+        <Button variant="solid" title="Log In" />
+        <Button variant="outline" title="Sing Out" />
       </div>
     </header>
   );
