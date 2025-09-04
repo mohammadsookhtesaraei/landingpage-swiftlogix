@@ -1,0 +1,41 @@
+.solid,
+.outline {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 0.25rem;
+  padding-block: 0.6rem;
+  padding-inline: 0.93rem;
+  border: none;
+  font-size: 0.62rem;
+  transition: background-color 0.3 ease-in-out;
+}
+
+.solid:hover {
+  background-color: var(--color-primary-hover);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.outline {
+  border: 1px var(--color-primary) solid;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.outline:hover {
+  background-color: rgb(236, 236, 236);
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 40rem) {
+  .solid,
+  .outline {
+    padding-block: 0.87rem;
+    padding-inline: 2.12rem;
+    font-size: 1rem;
+  }
+}
+
+/* lg */
+
+@media screen and (min-width: 64rem) {
+}

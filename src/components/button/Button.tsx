@@ -1,12 +1,20 @@
 import type { ComponentProps } from 'react';
 
-type Button = ComponentProps<'button'> & {
+import styles from '@/components/button/Button.module.css';
+
+type Variant = 'solid' | 'outline';
+
+type ButtonProps = ComponentProps<'button'> & {
   title: string;
+  variant?: Variant;
 };
 
-const Button = ({ className, title, ...props }: Button) => {
+const Button = ({ variant, title, ...props }: ButtonProps) => {
   return (
-    <button className={className} {...props}>
+    <button
+      className={`${variant === 'solid' ? styles.solid : styles.outline}`}
+      {...props}
+    >
       {title}
     </button>
   );

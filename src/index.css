@@ -1,12 +1,13 @@
 :root {
-  --color-gray-98: hsl(0deg 0 98%);
-  --color-gray-90: hsl(0deg 0 90%);
-  --color-gray-80: hsl(0deg 0 80%);
-  --color-gray-70: hsl(0deg 0 70%);
-  --color-gray-40: hsl(0deg 0 40%);
-  --color-gray-30: hsl(0deg 0 30%);
-  --color-gray-20: hsl(0deg 0 20%);
-  --color-gray-10: hsl(0deg 0 10%);
+  --color-gray-98: hsl(0, 0%, 98%);
+  --color-gray-90: hsl(0, 0%, 90%);
+  --color-gray-80: hsl(0, 0%, 80%);
+  --color-gray-70: hsl(0, 0%, 70%);
+  --color-gray-40: hsl(0, 0%, 40%);
+  --color-gray-30: hsl(0, 0%, 30%);
+  --color-gray-20: hsl(0, 0%, 20%);
+  --color-gray-10: hsl(0, 0%, 10%);
+
   --color-primary: hsl(199, 96%, 27%);
   --color-white: hsl(0, 0%, 100%);
   --color-primary-hover: hsl(199, 98%, 22%);

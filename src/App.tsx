@@ -1,12 +1,12 @@
-import Banner from '@/components/banner/Banner';
 import Header from '@/components/header/Header';
+import Hero from '@/components/hero/Hero';
 
 export default function App() {
   return (
     <>
       <Header />
       <main>
-        <Banner />
+        <Hero />
       </main>
       <footer></footer>
     </>
