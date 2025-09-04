@@ -1,5 +1,5 @@
 #header {
-  padding-block: 2rem;
+  padding-block: 1rem;
   margin-inline: 1rem;
   display: flex;
   align-items: center;
@@ -8,14 +8,14 @@
 }
 
 .logo img {
-  width: 112px;
-  height: 29px;
+  inline-size: 112px;
+  block-size: 29px;
   display: block;
 }
 
 .hamburger {
   display: block;
-  height: fit-content;
+  block-size: fit-content;
 }
 
 #header nav {
@@ -28,10 +28,11 @@
 }
 
 /* sm */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 40rem) {
   #header {
-    width: min(75rem, 100% - 2rem);
+    inline-size: min(75rem, 100% - 2rem);
     margin-inline: auto;
+    margin-block: 1.8rem;
   }
   .hamburger {
     display: none;
@@ -49,7 +50,7 @@
 
   #header nav ul li a {
     text-decoration: none;
-    font-size: 10px;
+    font-size: 0.62rem;
     color: inherit;
   }
 
@@ -66,8 +67,9 @@
   .btn_lOgOut {
     color: var(--color-white);
     background-color: var(--color-primary);
-    border-radius: 4px;
-    padding: 14px 15px;
+    border-radius: 0.25rem;
+    padding-block: 0.6rem;
+    padding-inline: 0.93rem;
     border: none;
     font-size: 0.62rem;
     transition: background-color 0.3 ease-in-out;
@@ -91,42 +93,34 @@
 
 /* md */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
+  #header {
+    margin-block: 2rem;
+  }
   #header nav ul {
-    gap: 2;
+    gap: 2rem;
   }
 
   #header nav ul li a {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .btn_logIN,
   .btn_lOgOut {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    border-radius: 4px;
-    padding: 14px 15px;
-    border: none;
-    font-size: 10px;
-  }
-
-  .btn_lOgOut {
-    border: 1px var(--color-primary) solid;
-    background-color: var(--color-white);
-    color: var(--color-primary);
+    font-size: 0.62rem;
   }
 }
 
 /* lg */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
   .logo img {
-    width: revert;
-    height: revert;
+    inline-size: revert;
+    block-size: revert;
   }
 
   #header nav ul {
-    gap: 3;
+    gap: 3rem;
   }
 
   #header nav ul li a {
@@ -135,18 +129,9 @@
 
   .btn_logIN,
   .btn_lOgOut {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    border-radius: 4px;
-    padding: 14px 34px;
-    border: none;
+    padding-block: 0.87rem;
+    padding-inline: 2.12rem;
     font-size: 1rem;
-  }
-
-  .btn_lOgOut {
-    border: 1px var(--color-primary) solid;
-    background-color: var(--color-white);
-    color: var(--color-primary);
   }
 }
 
