@@ -1,4 +1,4 @@
-import { ReactElement, SVGProps } from 'react';
+import type { ReactElement, SVGProps } from 'react';
 
 export function MingcuteTimeFill(props: SVGProps<SVGSVGElement>): ReactElement {
   return (

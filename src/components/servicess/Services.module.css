@@ -28,4 +28,8 @@
 }
 
 .card {
+  display: grid;
+  grid-template-columns: repeat(3, 22.62rem);
+  gap: 3.56rem;
+  justify-content: center;
 }

@@ -1,4 +1,4 @@
-import { ReactElement, SVGProps } from 'react';
+import type { ReactElement, SVGProps } from 'react';
 
 export function MingcuteComputerFill(
   props: SVGProps<SVGSVGElement>

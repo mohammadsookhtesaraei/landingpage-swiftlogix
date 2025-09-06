@@ -1,0 +1,25 @@
+.services-card {
+  display: grid;
+  gap: 1rem;
+  padding-block: 2.5rem;
+  padding-inline: 1.7rem;
+  border: 1px solid #95ddff;
+  border-radius: 24px;
+}
+
+.icon {
+  display: grid;
+  background-color: #eff9ff;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  place-content: center;
+  border-radius: 8px;
+}
+.title {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.description {
+}

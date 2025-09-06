@@ -2,6 +2,8 @@ import ServicesCard from '../servicesCard/ServicesCard';
 
 import styles from '@/components/servicess/Services.module.css';
 
+import { dataCard } from '@/constant/DataCard';
+
 const Services = () => {
   return (
     <div className={styles.services}>
@@ -15,9 +17,9 @@ const Services = () => {
         time.
       </p>
       <div className={styles.card}>
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
+        {dataCard.map((data) => (
+          <ServicesCard {...data} />
+        ))}
       </div>
     </div>
   );
