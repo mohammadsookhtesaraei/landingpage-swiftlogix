@@ -29,7 +29,19 @@
 
 .card {
   display: grid;
-  grid-template-columns: repeat(3, 22.62rem);
+  grid-template-columns: repeat(1, 22.62rem);
   gap: 3.56rem;
   justify-content: center;
+}
+
+@media screen and (min-width: 48rem) {
+  .card {
+    grid-template-columns: repeat(2, 22.62rem);
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .card {
+    grid-template-columns: repeat(3, 22.62rem);
+  }
 }
